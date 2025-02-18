@@ -50,7 +50,7 @@
       width: 12px;
       height: 12px;
       margin: 0 5px;
-      background-color: #007bff;
+      background-color: #27384a;
       border-radius: 50%;
       animation: pulse 1.4s infinite ease-in-out both;
     }
@@ -77,6 +77,14 @@
         opacity: 1;
       }
     }
+      /* 🎯 Mobile View: Make Spinner Bigger */
+  @media (max-width: 600px) {
+    .spinner {
+      width: 80px;
+      height: 80px;
+      border-width: 8px;
+    }
+  }
   </style>
 </head>
 <body>
