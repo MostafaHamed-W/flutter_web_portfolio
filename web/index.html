@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="/flutter_web_portfolio/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="Welcome to My Portfolio showcasing my projects and work.">
-
-  <!-- Disable service worker caching -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,7 +21,7 @@
 
   <style>
     /* Full-screen loading container */
-    #loading-spinner {
+    #loading-dot {
       position: fixed;
       top: 0;
       left: 0;
@@ -90,7 +85,7 @@
 <body>
 
   <!-- ✅ Loading Indicator -->
-  <div id="loading-spinner">
+  <div id="loading-dot">
     <div class="dots-loader">
       <div class="dot"></div>
       <div class="dot"></div>
@@ -101,7 +96,7 @@
   <!-- ✅ Hide loader when Flutter loads -->
   <script>
     window.addEventListener('flutter-first-frame', function () {
-      document.getElementById('loading-spinner').style.display = 'none';
+      document.getElementById('loading-dot').style.display = 'none';
     });
   </script>
 
