@@ -14,6 +14,7 @@ const kSkillsNames = [
   'IOS',
 ];
 
+const personalNetworkPhoto = 'https://res.cloudinary.com/doqgqhqm6/image/upload/v1740687928/personal_photo_yjisnu.png';
 const kAvertaFont = 'Averta';
 const kSaipersGate = 'assets/images/projects/saipers_gate.png';
 const kOdexss = 'assets/images/projects/odexss.png';

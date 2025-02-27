@@ -75,6 +75,7 @@ class HeaderBody extends StatelessWidget {
                 launchUrlString('mailto:mostafa.hamed.w@gmail.com?subject=Contact Mostafa&body=Dear%20Mostafa');
               },
               style: ButtonStyle(
+                iconSize: MaterialStateProperty.all(30),
                 padding: MaterialStatePropertyAll(
                   EdgeInsets.symmetric(vertical: isSmall ? 10 : 17, horizontal: isSmall ? 8 : 15),
                 ),
@@ -85,7 +86,7 @@ class HeaderBody extends StatelessWidget {
               ),
               child: Text(
                 'Contact Me',
-                style: Theme.of(context).textTheme.labelLarge?.copyWith(color: Colors.black, fontSize: isSmall ? 12 : null),
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(color: Colors.black, fontSize: isSmall ? 10 : null),
               ),
             ).moveUpHover,
           ],

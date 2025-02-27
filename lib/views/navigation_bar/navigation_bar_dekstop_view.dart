@@ -28,6 +28,7 @@ class NavigationBarDesktopView extends StatelessWidget {
             Image.asset(
               'assets/images/name.webp',
               height: 60,
+              width: 60,
             ),
             const Spacer(),
             for (var item in navigationItems)

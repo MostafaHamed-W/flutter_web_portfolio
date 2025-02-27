@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/hover_extensions.dart';
 import 'package:web_portfolio/views/footer/widgets/social_info.dart';
 import 'package:web_portfolio/views/header/widgets/header_body.dart';
@@ -52,9 +53,16 @@ class HeaderMobileView extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Expanded(
-              child: Image.asset(
-                'assets/images/personal_photo.png',
-                // height: 500,
+              child: Image.network(
+                personalNetworkPhoto,
+                height: 450,
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return const Center(child: CircularProgressIndicator());
+                },
+                errorBuilder: (context, error, stackTrace) {
+                  return const Icon(Icons.error); // Placeholder if image fails to load
+                },
               ),
             ),
           ],

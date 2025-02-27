@@ -18,6 +18,7 @@ class NavigationBarMobileView extends StatelessWidget {
             Image.asset(
               'assets/images/name.webp',
               height: 40,
+              width: 40,
             ),
             const Spacer(),
             IconButton(
