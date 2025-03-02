@@ -1,4 +1,5 @@
-import 'dart:html' as html;
+import 'dart:developer';
+import 'package:universal_html/html.dart' as html;
 import 'dart:typed_data';
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -16,14 +17,16 @@ class PdfDownloadService {
       final url = html.Url.createObjectUrlFromBlob(blob);
 
       // Create an anchor element and trigger the download
-      final anchor = html.AnchorElement(href: url)
+      final anchor = html.AnchorElement(href: url);
+
+      anchor
         ..setAttribute("download", fileName)
         ..click();
 
       // Revoke the Object URL to free memory
       html.Url.revokeObjectUrl(url);
     } catch (e) {
-      print("Error downloading PDF: $e");
+      log("Error downloading PDF: $e");
     }
   }
 }

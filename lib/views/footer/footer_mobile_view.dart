@@ -34,7 +34,7 @@ class FooterMobileView extends StatelessWidget {
           Text('© Mostafa Hamed $currentYear'),
           InkWell(
             onTap: () => launchUrlString('https://github.com/MostafaHamed-W'),
-            mouseCursor: MaterialStateMouseCursor.clickable,
+            mouseCursor: WidgetStateMouseCursor.clickable,
             splashColor: Colors.transparent,
             highlightColor: Colors.transparent,
             hoverColor: Colors.transparent,

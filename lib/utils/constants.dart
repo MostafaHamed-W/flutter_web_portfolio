@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:web_portfolio/services/whats_app_service.dart';
 import 'package:web_portfolio/utils/colors.dart';
 import 'package:web_portfolio/views/experience/models/experience_info.dart';
@@ -14,6 +15,7 @@ const kSkillsNames = [
   'IOS',
 ];
 
+TextStyle kMonteseratFont = GoogleFonts.montserrat();
 const personalNetworkPhoto = 'https://res.cloudinary.com/doqgqhqm6/image/upload/v1740687928/personal_photo_yjisnu.png';
 const kAvertaFont = 'Averta';
 const kSaipersGate = 'assets/images/projects/saipers_gate.png';

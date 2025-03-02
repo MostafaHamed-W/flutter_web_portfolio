@@ -75,14 +75,14 @@ class HeaderBody extends StatelessWidget {
                 launchUrlString('mailto:mostafa.hamed.w@gmail.com?subject=Contact Mostafa&body=Dear%20Mostafa');
               },
               style: ButtonStyle(
-                iconSize: MaterialStateProperty.all(30),
-                padding: MaterialStatePropertyAll(
+                iconSize: WidgetStateProperty.all(30),
+                padding: WidgetStatePropertyAll(
                   EdgeInsets.symmetric(vertical: isSmall ? 10 : 17, horizontal: isSmall ? 8 : 15),
                 ),
-                side: MaterialStateProperty.all(const BorderSide(color: AppColors.kPrimaryColor)), // Border color
-                shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))), // Border radius
+                side: WidgetStateProperty.all(const BorderSide(color: AppColors.kPrimaryColor)), // Border color
+                shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))), // Border radius
 
-                backgroundColor: MaterialStateProperty.all(Colors.transparent), // Transparent button
+                backgroundColor: WidgetStateProperty.all(Colors.transparent), // Transparent button
               ),
               child: Text(
                 'Contact Me',

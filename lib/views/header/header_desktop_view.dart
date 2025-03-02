@@ -53,7 +53,10 @@ class HeaderDesktopView extends StatelessWidget {
             personalNetworkPhoto,
             loadingBuilder: (context, child, loadingProgress) {
               if (loadingProgress == null) return child;
-              return const Center(child: CircularProgressIndicator());
+              return SizedBox(
+                  width: isSmall ? imageWidth : 450,
+                  height: 500, // Add a fixed height to prevent shifting
+                  child: const Center(child: CircularProgressIndicator()));
             },
             errorBuilder: (context, error, stackTrace) {
               return const Icon(Icons.error); // Placeholder if image fails to load

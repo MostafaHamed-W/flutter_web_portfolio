@@ -17,7 +17,7 @@ class NavigationBarItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(left: 20),
       child: InkWell(
-        mouseCursor: MaterialStateMouseCursor.clickable,
+        mouseCursor: WidgetStateMouseCursor.clickable,
         hoverColor: Colors.transparent,
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,

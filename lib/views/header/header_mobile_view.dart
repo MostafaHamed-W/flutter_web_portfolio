@@ -21,7 +21,7 @@ class HeaderMobileView extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Theme.of(context).colorScheme.background,
+            Theme.of(context).colorScheme.surface,
             const Color(0xffebebec),
           ],
         ),
